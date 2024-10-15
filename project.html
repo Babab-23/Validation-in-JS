@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in JS</title>
+</head>
+<style>
+    body {
+
+    }
+.text1 {
+    color:red;
+}
+.text2 {
+    color:orange;
+    text-decoration:line-through;
+}
+.text3 {
+    color: rgb[70,90,120];
+    text-decoration:underline;
+}
+.text4 {
+    color:rgb[0,0,30,20];
+    text-decoration:underline overline;
+}
+.p1 {
+    font-family:"Times New Roman", Times, serif;
+}
+.p2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+</style>
+<body>
+    <form name="myForm" onsubmit="validateForm();">
+   Name:<input tupe="text" name="fname">
+   Age:<input id="id1" type="number" min="18">
+   <input type="submit" value="login">
+    </form>
+function ValidateForm() {
+    var x=document.forms["myForms"]["fname"].value;
+    var x=document.forms["myForms"]["id1"].value;
+    if(x== "" y=="") {
+        alert("Name/age cannot be empty");
+  return false;
+    }
+    else 
+    alert("Successfully loggeed in");
+}
+</body>
+</html>
